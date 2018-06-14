@@ -8,7 +8,7 @@ import {
 @Controller()
 export class ApplicationController {
     @Get()
-    @Render("index.pug")
+    @Render("index")
     public app() {
         return {
             message: `hello world`

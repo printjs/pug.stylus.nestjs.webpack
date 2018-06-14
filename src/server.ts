@@ -4,13 +4,18 @@ import { join } from "path";
 import pug from "pug";
 
 async function bootstrap() {
-    const app = await NestFactory.create(ApplicationModule, new FastifyAdapter());
-    app.setViewEngine({
-        engine: {
-            pug: require("pug"),
-        },
-        templates: join(__dirname, "views"),
-    });
+    // , new FastifyAdapter()
+    const app = await NestFactory.create(ApplicationModule);
+
+    // app.useStaticAssets(__dirname + "/public");
+    app.setBaseViewsDir(__dirname + "/views");
+    app.setViewEngine("pug");
+    // app.setViewEngine({
+    //     engine: {
+    //         pug: require("pug"),
+    //     },
+    //     templates: join(__dirname, "views"),
+    // });
     await app.listen(3000);
 }
 bootstrap();
