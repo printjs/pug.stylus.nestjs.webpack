@@ -1,0 +1,48 @@
+{
+  "name": "mpa_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/ts-node -P tsconfig.json -r tsconfig-paths/register src/server.ts",
+    "build": "node_modules/.bin/webpack-cli --config ./src/views/webpack.config.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/printjs/jade.stylus.nestjs.webpack.git"
+  },
+  "author": "wjt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/printjs/jade.stylus.nestjs.webpack/issues"
+  },
+  "homepage": "https://github.com/printjs/jade.stylus.nestjs.webpack#readme",
+  "dependencies": {
+    "@nestjs/common": "^5.0.1",
+    "@nestjs/core": "^5.0.1",
+    "@nestjs/typeorm": "^5.0.0",
+    "fastify": "^1.6.0",
+    "fastify-formbody": "^2.0.0",
+    "mysql": "^2.15.0",
+    "point-of-view": "^1.1.0",
+    "pug": "^2.0.3",
+    "stylus": "^0.54.5",
+    "typeorm": "^0.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.3",
+    "@types/pug": "^2.0.4",
+    "@types/webpack": "^4.4.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.2.1",
+    "ts-loader": "^4.4.1",
+    "ts-node": "^6.1.1",
+    "tsconfig-paths": "^3.4.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.6"
+  }
+}

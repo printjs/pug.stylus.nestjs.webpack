@@ -1,0 +1,84 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {
+        "max-line-length": {
+            "options": [
+                120
+            ]
+        },
+    },
+    "rules": {
+        "max-line-length": {
+            "options": [
+                120
+            ]
+        },
+        "object-literal-shorthand": false,
+        "no-empty": false,
+        "no-console": false,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "no-consecutive-blank-lines": false,
+        "no-var-requires": false,
+        "class-name": true,
+        "no-unused-expression": false,
+        "comment-format": [
+            true,
+            "check-space"
+        ],
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "no-duplicate-variable": true,
+        "no-eval": true,
+        "no-internal-module": false,
+        "no-trailing-whitespace": false,
+        "no-var-keyword": true,
+        "one-line": [
+            true,
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "quotemark": [
+            true,
+            "double"
+        ],
+        "semicolon": [
+            true
+        ],
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ]
+    },
+    "rulesDirectory": [
+        "./src"
+    ]
+}
