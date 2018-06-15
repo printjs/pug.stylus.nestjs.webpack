@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/views/src/resources/styles/E:/code/jade.stylus.nestjs.webpack/src/views/src/resources/styles/src/views/src/resources/styles/index.styl"],"names":[],"mappings":"AACA,GACI,U","file":"index.css","sourcesContent":["@import \"global.styl\"\nh1\n    color $color"],"sourceRoot":""}

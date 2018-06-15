@@ -1,16 +1,9 @@
 doctype html
 html
     head
-        title my site
-        meta( charset="utf-8" )
-        meta(
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        )
-        meta(
-            http-equiv="X-UA-Compatible"
-            content="ie=edge"
-        )
+        include includes/header.pug
+        link(rel="stylesheet", href="index.css")
     body
         h1 #{message}
-        include includes/foot.pug
+        include includes/footer.pug
+        script(src="index.js")
