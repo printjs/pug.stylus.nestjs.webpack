@@ -10,6 +10,7 @@ const config: webpack.Configuration = {
     mode: "production",
     entry: {
         index: join(__dirname, "src/index.ts"),
+        overview: join(__dirname, "src/overview.ts"),
         test: join(__dirname, "src/test.ts"),
     },
     output: {
@@ -87,8 +88,8 @@ const config: webpack.Configuration = {
         new CleanWebpackPlugin([
             "dist"
         ], {
-            root:__dirname,
-        }),
+                root: __dirname,
+            }),
     ]
 };
 

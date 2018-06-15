@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node_modules/.bin/ts-node -P tsconfig.json -r tsconfig-paths/register src/server.ts",
-    "build": "node_modules/.bin/webpack-cli --config ./src/views/webpack.config.ts"
+    "build": "node_modules/.bin/webpack-cli --config ./src/views/webpack.config.ts -w"
   },
   "repository": {
     "type": "git",
@@ -22,14 +22,18 @@
     "@nestjs/common": "^5.0.1",
     "@nestjs/core": "^5.0.1",
     "@nestjs/typeorm": "^5.0.0",
+    "jquery": "^3.3.1",
     "mysql": "^2.15.0",
     "pug": "^2.0.3",
     "stylus": "^0.54.5",
+    "swiper": "^4.3.3",
     "typeorm": "^0.2.7"
   },
   "devDependencies": {
+    "@types/jquery": "^3.3.2",
     "@types/node": "^10.3.3",
     "@types/pug": "^2.0.4",
+    "@types/swiper": "^4.2.0",
     "@types/webpack": "^4.4.0",
     "autoprefixer": "^8.6.2",
     "clean-webpack-plugin": "^0.1.19",
