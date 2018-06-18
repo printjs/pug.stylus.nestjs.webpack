@@ -14,4 +14,12 @@ export class ApplicationController {
             message: `hello world`
         }
     }
+
+    @Get("/home")
+    @Render("home")
+    public home() {
+        return {
+            message: `hello home`
+        }
+    }
 }

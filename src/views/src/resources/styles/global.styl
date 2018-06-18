@@ -1,5 +1,8 @@
 @import "var.styl"
 
+
+$common-with=800px
+
 html,body
     margin 0
     padding 0
@@ -36,7 +39,7 @@ html,body
                         border-radius 20px
                         cursor pointer
         >.foreword
-            width 800px
+            width $common-with
             height 60px
             position absolute
             left 50%
@@ -47,17 +50,28 @@ html,body
             background-color #ffffff
             box-shadow: 0px 5px 3px #888888;
             display flex
-            justify-content space-between
+            justify-content space-around
             align-items center
             >.pagination
                 display flex
                 cursor pointer
                 >.page
                     margin-left 15px
-                    height 20px
-                    width 20px
+                    height 10px
+                    width 10px
                     border-radius 10px
-                    background #000000
+                    background #d0efff
+                >.page-current
+                    background #13a8ff
+    .common
+        width $common-with
+        margin 0 auto
+        margin-top 40px
+    .more
+        display inline-block
+        padding 5px 10px
+        border-radius 10px
+        border 1px solid #2fb7ff
     #footer
         width 100%
         display flex

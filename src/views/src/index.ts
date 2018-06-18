@@ -1,18 +1,15 @@
 import { Overview } from "./overview";
 import $ from "jquery";
-
 require("./resources/styles/index.styl");
 
-// const overview = new Overview();
 
-
-
-// let test: any = document.getElementById("pagination");
-// console.log(test);
-// test.onclick = function (dom: HTMLElement) {
-//     console.log(dom);
-// }
-
+$(document).ready(() => {
+    const overview = new Overview();
+    $("#pagination").click((e)=>{
+        e.stopPropagation();
+        overview.swithPage(e.target.accessKey);
+    })
+});
 
 // export class A {
 //     private a: string = "";
