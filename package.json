@@ -33,6 +33,7 @@
     "@types/jquery": "^3.3.2",
     "@types/node": "^10.3.3",
     "@types/pug": "^2.0.4",
+    "@types/stylus": "^0.48.30",
     "@types/swiper": "^4.2.0",
     "@types/webpack": "^4.4.0",
     "autoprefixer": "^8.6.2",
