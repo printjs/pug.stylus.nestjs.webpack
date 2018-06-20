@@ -9,8 +9,8 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const config: webpack.Configuration = {
     mode: "production",
     entry: {
-        index: join(__dirname, "src/index.ts"),
-        overview: join(__dirname, "src/overview.ts"),
+        index_shell: join(__dirname, "src/index.ts"),
+        home_shell: join(__dirname, "src/home.ts"),
         test: join(__dirname, "src/test.ts"),
     },
     output: {

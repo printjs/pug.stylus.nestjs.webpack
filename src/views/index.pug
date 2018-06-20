@@ -2,9 +2,9 @@ doctype html
 html
     head
         include includes/header.pug
-        link(rel="stylesheet", href="index.css")
+        block link
     body
         include includes/overview.pug
-        h1 #{message}
+        block content
         include includes/footer.pug
-        script(src="index.js")
+        script(src="index_shell.js")

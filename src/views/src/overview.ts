@@ -1,6 +1,5 @@
 import Swiper from "swiper";
 require("swiper/dist/css/swiper.min.css");
-import $ from "jquery";
 
 
 export class Overview {
@@ -42,10 +41,3 @@ export class Overview {
     }
 }
 
-$(document).ready(() => {
-    const overview = new Overview();
-    $("#pagination").click((e)=>{
-        e.stopPropagation();
-        overview.swithPage(e.target.accessKey);
-    })
-});

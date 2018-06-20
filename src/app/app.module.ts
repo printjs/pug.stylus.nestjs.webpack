@@ -8,7 +8,7 @@ import { TypeOrmModule } from "@nestjs/typeorm";
     controllers: [ApplicationController],
     imports: [
         // AppModelModule,
-        TypeOrmModule.forRoot(),
+        // TypeOrmModule.forRoot(),
     ]
 })
 export class ApplicationModule {
