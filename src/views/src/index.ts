@@ -8,7 +8,7 @@ $(document).ready(() => {
     $("#pagination").click((e)=>{
         e.stopPropagation();
         overview.swithPage(e.target.accessKey);
-    })
+    });
 });
 
 // export class A {

@@ -1,5 +1,6 @@
 import Swiper from "swiper";
 require("swiper/dist/css/swiper.min.css");
+import $ from "jquery";
 
 
 export class Overview {
@@ -33,6 +34,17 @@ export class Overview {
             // scrollbar: {
             //     el: ".swiper-scrollbar",
             // },
+        });
+
+        this.mySwiper.on("slideChange", () => {
+            const page = $("#pagination").children(".page");
+            for (let i = 0, len = page.length; i < len; i++) {
+                if (parseInt(page[i].accessKey, 10) === this.mySwiper.realIndex) {
+                    page.eq(i).addClass("page-current");
+                } else {
+                    page.eq(i).removeClass("page-current");
+                }
+            }
         });
     }
 

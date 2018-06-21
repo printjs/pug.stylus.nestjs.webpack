@@ -4,9 +4,15 @@
         //- Additional required wrapper
         .swiper-wrapper
             //- Slides
-            .swiper-slide slide1
-            .swiper-slide slide2
-            .swiper-slide slide3
+            case page
+                when "home"
+                    each item,index in homepages
+                        .swiper-slide
+                            img(alt="picture" src=item.url)
+                            h3 #{item.h1}
+                            p #{item.h2}
+                default
+                    .swiper-slide sdfasdfasdfsadf
         //- If we need pagination
         //- .swiper-pagination 
         //- If we need navigation buttons
@@ -16,6 +22,10 @@
         //- .swiper-scrollbar
     .navigation
         .logo
+            img(
+                alt="logo"
+                src="src/resources/images/home-img-logo.png"
+            )
         .index
             .item 首页
             .item 产品与服务
@@ -25,6 +35,7 @@
     .foreword
         .title 12312313123
         div(class="pagination" id="pagination")
-            .page(accessKey="1") 
-            .page(accessKey="2") 
-            .page(accessKey="3") 
+            case page
+                when "home"
+                    each item,index in homepages
+                        .page(accessKey=index)

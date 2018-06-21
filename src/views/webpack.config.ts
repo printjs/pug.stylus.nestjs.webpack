@@ -9,9 +9,8 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const config: webpack.Configuration = {
     mode: "production",
     entry: {
-        index_shell: join(__dirname, "src/index.ts"),
-        home_shell: join(__dirname, "src/home.ts"),
-        test: join(__dirname, "src/test.ts"),
+        "index.page": join(__dirname, "src/index.ts"),
+        "home.page": join(__dirname, "src/home.ts"),
     },
     output: {
         path: join(__dirname, "dist"),
@@ -75,6 +74,10 @@ const config: webpack.Configuration = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+                loader: 'url-loader?limit=8192&name=[path][name].[ext]'
             },
         ]
     },

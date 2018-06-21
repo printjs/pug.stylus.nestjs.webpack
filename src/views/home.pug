@@ -1,24 +1,134 @@
 //- extends index.pug
 extends index.pug
 block link
-    link(rel="stylesheet", href="home_shell.css")
+    link(rel="stylesheet", href="dist/home.page.css")
 block content
-    .common
-        .pas
+    .pas
+        .intro_title
+            .home_title
+                .word 产品与服务
+                .box_shadow Products & solutions
+            .more more
+        .context
+            .part
+                .img_intro
+                    img(alt="p1" src="src/resources/images/home-ps-img1.png")
+                p App
+                p.des 前程似锦创立于2017年，是以教育为导向的社交平台，通过大数据分析为家长提供既有参与感又个性化的选择教育体验。
+                .learnmore 了解更多
+            .part
+                .img_intro
+                    img(alt="p2" src="src/resources/images/home-ps-img2.png")
+                p App
+                p.des 功能齐全、贴合培训学校运营管理实际的系统软件，能方便快捷解决学校招生、教务、缴费、财务、人事等环节的管理问题。
+                .learnmore 了解更多
+    .phundred
+        .pmessage
             .intro_title
                 .home_title
-                    .word 产品与服务
-                    .box_shadow Products & solutions
+                    .word 产品内容
+                    .box_shadow Platform Content
                 .more more
-            .context
+        div(class="pmessage pshow")
+            .part
+                .figure
+                    img(alt="pc1" src="src/resources/images/home-pc-img-1.png")
+                p 托管培训
+                .context 随着生活水平的不断改善和对孩 子成长的预期，现在的孩子进托 管班，参与社会培训班，英语、 奥数、舞蹈、绘画、器乐、运动、 特长班几乎成了每个孩子的必须 项，不断强化素质培养。 那么，该如何选择？如何确定教 学机构的质量？如何降低学习费 用？如何保证交费后的安全性？ 都成了很有挑战性的问题。
+            .part
+                .figure
+                    img(alt="pc2" src="src/resources/images/home-pc-img-2.png")
+                p 拓展游学
+                .context 随着“爸爸去哪儿”等亲子类节 目热播，亲子活动得到不断拓展 与普及，周末、寒暑假带上孩子 一起出去玩，边玩边增长见识逐 渐成为家长培养孩子过程中的必 备选项。 那么，哪些地方适合带孩子出去 玩？如何能便捷地买到门票？如 何能买到更便宜的门票？游玩中 有哪些公略？需要有了结的地方。
+            .part
+                .figure
+                    img(alt="pc3" src="src/resources/images/home-pc-img-3.png")
+                p 社区资讯
+                .context 校动辄把家长们拉进学校，拉 进课堂，陪孩子们一起学习互动。 家长们每天要陪伴孩子做作业到 晚上10：00。这些都说明现在培 养孩子，对社交和培养方式的获 取渴求越来越强烈。 那么，就需要有一个由针对性教 育地平台，给家长们交流、提问、 学习、探讨，共同探索一条行而 有效的培养途径。
+            .part
+                .figure
+                    img(alt="pc4" src="src/resources/images/home-pc-img-4.png")
+                p 在线教育
+                .context 由于优秀学习资源的稀缺性和区 域性限制等因素造成的学习环境 差异化其实非常巨大，对教育资 源公平性的争夺日益激烈。 解决这个问题的途径就是通过互 联网的手段快速对接教与学，并 突破很多条件的限制（比如时差， 比如区域……）就成为内容教育 的创新与突破点，作为平台，对 他们进行流量分发一样有效。
+        .company_hundred
+            div(class="pmessage company_resume")
+                .part 
+                    p.m 2018
+                        span 年
+                    p.t 公司成立时间
                 .part
-                    .img_intro
-                    p App
-                    p.des 这是一些杂七杂八的描述
-                    .learnmore 了解更多
+                    p.m 1082
+                        span 万
+                    p.t 年营业额
                 .part
-                    .img_intro
-                    p App
-                    p.des 这是一些杂七杂八的描述这是一些杂七杂八的描述这是一些杂七杂八的描述这是一些杂七杂八的描述这是一些杂七杂八的描述
-                    .learnmore 了解更多
-    script(src="home_shell.js")
+                    p.m 3
+                        span +
+                    p.t 覆盖城市
+                .part
+                    p.m 10
+                        span +
+                    p.t 投资项目
+                .part
+                    p.m 40
+                        span +
+                    p.t 项目研究成果
+            .logo_story
+                .logo
+                    img(alt="logo" src="src/resources/images/home-aus-logo.png")
+                .story
+                    .intro_title
+                        .home_title
+                            .word 产品故事
+                            .box_shadow About US
+                        .more more
+                    .context.
+                        因市场调节不足导致的教育资源良莠不齐等混乱现状，外加时间、人力成本较高，让众多“求学者”难以快速、精准地找到优质教育资源。为给用户提供更加放心、便捷的教育信息服务、四川前程似锦科技有限公司应运而生。
+                        作为一家创业型移动互联网公司，我们充满能量、充满激情，始终秉承“激情”、“创新”的信仰，永不停止对“专注”、执着”、“极致”这种极客精神的追求。因为共同的理想，一群朝气蓬勃的年轻人聚集在一起，坚定地为推进教育行业数字化的发展进程而奋斗。
+    .our_customer
+        .intro_title
+            .home_title
+                .word 我们的客户
+                .box_shadow Our Customer
+            .more more
+        .customer
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-Amazon.png")
+                .name Amazon
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-apple.png")
+                .name apple
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-facebook.png")
+                .name facebook
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-instagram.png")
+                .name instagram
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-Pinterest.png")
+                .name Pinterest
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-Tumblr.png")
+                .name Tumblr
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-Twitch.png")
+                .name Twitch
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-Twitter.png")
+                .name Twitter
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-Vimeo.png")
+                .name Vimeo
+            .part
+                div(class="figure" style="background-color:#A5ADB1")
+                    img(alt="picture" src="src/resources/images/home-oc-LOGO-Youtube.png")
+                .name Youtube
+    script(src="dist/home.page.js")

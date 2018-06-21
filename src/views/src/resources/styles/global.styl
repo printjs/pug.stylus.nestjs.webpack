@@ -1,7 +1,7 @@
 @import "var.styl"
 
 
-$common-with=800px
+
 
 html,body
     margin 0
@@ -11,8 +11,30 @@ html,body
         background-color transparent
         >.swiper-container 
             width 100%
-            height 450px
-            background-color green
+            height 650px
+            >.swiper-wrapper
+                >.swiper-slide
+                    position relative
+                    overflow hidden
+                    >h3
+                        position absolute
+                        left 0px
+                        right 0px
+                        text-align center
+                        z-index 3
+                        color #ffffff
+                        top 46%
+                    >p
+                        left 0px
+                        right 0px
+                        top 50%
+                        position absolute
+                        text-align center
+                        z-index 3
+                        color #ffffff
+                    >img 
+                        height 100%
+                        width 100%
         >.navigation
             position absolute
             left 0
@@ -39,11 +61,11 @@ html,body
                         border-radius 20px
                         cursor pointer
         >.foreword
-            width $common-with
+            width $common-width
             height 60px
             position absolute
             left 50%
-            margin-left -400px
+            margin-left $offset-left
             border-radius 80px
             bottom -30px
             z-index 1
@@ -63,15 +85,32 @@ html,body
                     background #d0efff
                 >.page-current
                     background #13a8ff
-    .common
-        width $common-with
-        margin 0 auto
-        margin-top 40px
-    .more
-        display inline-block
-        padding 5px 10px
-        border-radius 10px
-        border 1px solid #2fb7ff
+    .intro_title
+        display flex
+        justify-content space-between
+        align-items center
+        >.home_title
+            position relative
+            width 50%
+            padding 20px 0px
+            >.word
+                font-size 24px 
+            >.box_shadow
+                position absolute
+                left 20px
+                bottom 4px
+                font-size 24px
+                width auto
+                z-index -1
+                color rgb(242,244,245)
+        >.more
+            margin-right 20px
+            display inline-block
+            padding 10px 20px
+            border-radius 20px
+            border 1px solid #2fb7ff
+            color #2fb7ff
+            cursor pointer
     #footer
         width 100%
         display flex
