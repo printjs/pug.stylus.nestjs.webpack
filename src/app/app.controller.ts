@@ -41,4 +41,15 @@ export class ApplicationController {
             }]
         }
     }
+
+    @Get("/pas")
+    @Render("pas")
+    public pas() {
+        return {
+            page:"pas",
+            paspages:[
+                "src/resources/images/home-img-page2.png"
+            ]
+        }
+    }
 }

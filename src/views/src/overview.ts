@@ -10,10 +10,10 @@ export class Overview {
         this.mySwiper = new Swiper(".swiper-container", {
             // Optional parameters
             // direction: "vertical",
-            loop: true,
+            loop: document.location.pathname === "pas" ? false : true,
             spaceBetween: 30,
             centeredSlides: true,
-            autoplay: {
+            autoplay: document.location.pathname === "pas" ? {} : {
                 delay: 2500,
                 disableOnInteraction: false,
             },

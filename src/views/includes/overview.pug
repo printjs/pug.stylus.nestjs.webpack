@@ -11,6 +11,10 @@
                             img(alt="picture" src=item.url)
                             h3 #{item.h1}
                             p #{item.h2}
+                when "pas"
+                    each url,index in paspages
+                        .swiper-slide
+                            img(alt="picture" src=url)
                 default
                     .swiper-slide sdfasdfasdfsadf
         //- If we need pagination
@@ -33,9 +37,23 @@
             .item 加入我们
             .item 关于我们
     .foreword
-        .title 12312313123
+        case page
+            when "home"
+                .title 12312313123
+            when "pas"
+                .intro_title
+                    .home_title
+                        .word 产品与服务
+                        .box_shadow Products & solutions
         div(class="pagination" id="pagination")
             case page
                 when "home"
-                    each item,index in homepages
-                        .page(accessKey=index)
+                    if paspages.length <= 1
+                    else
+                        each item,index in homepages
+                            .page(accessKey=index)
+                when "pas"
+                    if paspages.length <= 1
+                    else
+                        each item,index in paspages
+                            .page(accessKey=index)
