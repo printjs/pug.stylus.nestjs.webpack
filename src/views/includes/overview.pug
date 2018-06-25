@@ -4,19 +4,16 @@
         //- Additional required wrapper
         .swiper-wrapper
             //- Slides
-            case page
-                when "home"
-                    each item,index in homepages
-                        .swiper-slide
-                            img(alt="picture" src=item.url)
-                            h3 #{item.h1}
-                            p #{item.h2}
-                when "pas"
-                    each url,index in paspages
-                        .swiper-slide
-                            img(alt="picture" src=url)
-                default
-                    .swiper-slide sdfasdfasdfsadf
+            if page == "home"
+                each item,index in pages
+                    .swiper-slide
+                        img(alt="picture" src=item.url)
+                        h3 #{item.h1}
+                        p #{item.h2}
+            else
+                each url,index in pages
+                    .swiper-slide
+                        img(alt="picture" src=url)
         //- If we need pagination
         //- .swiper-pagination 
         //- If we need navigation buttons
@@ -31,29 +28,28 @@
                 src="src/resources/images/home-img-logo.png"
             )
         .index
-            .item 首页
-            .item 产品与服务
+            .item 
+                a(href="/home") 首页
+            .item 
+                a(href="/pas") 产品与服务
             .item 企业文化
             .item 加入我们
-            .item 关于我们
+            .item 
+                a(href="/about") 关于我们
     .foreword
         case page
             when "home"
                 .title 12312313123
             when "pas"
-                .intro_title
-                    .home_title
-                        .word 产品与服务
-                        .box_shadow Products & solutions
+                div(class="intro_title clearfix marginleft")
+                    .word 产品与服务
+                    .box_shadow Products & solutions
+            when "about"
+                div(class="intro_title clearfix marginleft")
+                    .word 关于我们
+                    .box_shadow About US
         div(class="pagination" id="pagination")
-            case page
-                when "home"
-                    if paspages.length <= 1
-                    else
-                        each item,index in homepages
-                            .page(accessKey=index)
-                when "pas"
-                    if paspages.length <= 1
-                    else
-                        each item,index in paspages
-                            .page(accessKey=index)
+            if pages.length <= 1
+            else
+                each item,index in pages
+                    .page(accessKey=index)

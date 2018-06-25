@@ -50,6 +50,16 @@ html,body
                 height 60px
                 align-items center
                 >.item
+                    >a
+                        text-decoration none 
+                        &:link
+                            color inherit 
+                        &:visited
+                            color inherit 
+                        &:active
+                            color inherit 
+                        &:hover
+                            color inherit 
                     display inline-block
                     margin-right 15px
                     padding 5px 0px
@@ -86,23 +96,22 @@ html,body
                 >.page-current
                     background #13a8ff
     .intro_title
-        display flex
-        justify-content space-between
-        align-items center
-        >.home_title
-            position relative
-            width 50%
-            padding 20px 0px
-            >.word
-                font-size 24px 
-            >.box_shadow
-                position absolute
-                left 20px
-                bottom 4px
-                font-size 24px
-                width auto
-                z-index -1
-                color rgb(242,244,245)
+        position relative
+        width 100%
+        height 60px
+        >.word
+            font-size 24px 
+            position absolute
+            left 20px
+            top 0px
+        >.box_shadow
+            position absolute
+            left 40px
+            top 24px
+            font-size 24px
+            width auto
+            z-index -1
+            color rgb(242,244,245)
         >.more
             margin-right 20px
             display inline-block
@@ -111,6 +120,20 @@ html,body
             border 1px solid #2fb7ff
             color #2fb7ff
             cursor pointer
+            float right
+    .marginleft
+        margin-left 100px
+    .clearfix
+        &:after
+            clear both
+            content ""
+            width 0
+            height 0
+            visibility hidden
+    .breadcrumb
+        span 
+            &:last-child
+                font-weight bold
     #footer
         width 100%
         display flex

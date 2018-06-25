@@ -1,1 +1,1 @@
-require("./resources/styles/home.styl")
+require("./resources/styles/home.styl");

@@ -5,7 +5,7 @@ require("./resources/styles/index.styl");
 
 $(document).ready(() => {
     const overview = new Overview();
-    $("#pagination").click((e)=>{
+    $("#pagination").click((e) => {
         e.stopPropagation();
         overview.swithPage(e.target.accessKey);
     });

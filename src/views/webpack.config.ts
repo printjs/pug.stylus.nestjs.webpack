@@ -11,10 +11,12 @@ const config: webpack.Configuration = {
     entry: {
         "index.page": join(__dirname, "src/index.ts"),
         "home.page": join(__dirname, "src/home.ts"),
+        "pas.page": join(__dirname, "src/pas.ts"),
+        "about.page": join(__dirname, "src/about.ts"),
     },
     output: {
         path: join(__dirname, "dist"),
-        filename: "[name].js"
+        filename: "[name].js",
     },
 
     target: "web",
@@ -24,9 +26,9 @@ const config: webpack.Configuration = {
         extensions: [".ts", ".tsx", ".js", ".jsx"],
         plugins: [
             new TsconfigPathsPlugin({
-                configFile: join(__dirname, "tsconfig.json")
-            })
-        ]
+                configFile: join(__dirname, "tsconfig.json"),
+            }),
+        ],
     },
 
     // Source maps support ("inline-source-map" also works)
@@ -46,7 +48,7 @@ const config: webpack.Configuration = {
             // },
             {
                 test: /\.tsx?$/,
-                loader: "ts-loader"
+                loader: "ts-loader",
             },
             {
                 test: /\.(css|styl)$/,
@@ -77,9 +79,9 @@ const config: webpack.Configuration = {
             },
             {
                 test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
-                loader: 'url-loader?limit=8192&name=[path][name].[ext]'
+                loader: "url-loader?limit=8192&name=[path][name].[ext]",
             },
-        ]
+        ],
     },
     plugins: [
         new MiniCssExtractPlugin({
@@ -89,11 +91,11 @@ const config: webpack.Configuration = {
             chunkFilename: "[id].[hash].css",
         }),
         new CleanWebpackPlugin([
-            "dist"
+            "dist",
         ], {
                 root: __dirname,
             }),
-    ]
+    ],
 };
 
 export default config;

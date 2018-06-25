@@ -77,8 +77,5 @@
             "check-separator",
             "check-type"
         ]
-    },
-    "rulesDirectory": [
-        "./src/**/*"
-    ]
+    }
 }
