@@ -1,2 +1,81 @@
 //- extends index.pug
 extends index.pug
+block link
+    link(rel="stylesheet", href="dist/culture.page.css")
+block content
+    include includes/mixins.pug
+    .culture
+        h1 前程似锦的使命是打造一站式教育资源整合平台
+        p 我们旨在提高用户的选课效率、降低机构的招生成本。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们倡导按成交付费的计费模式，解决了培训机构的广告投放风险，颠覆了传统的广告计费模式，引领中国教育培训市场蓬勃发展,搭建教育培训机构和学员之间的匹配平台。
+        .info-div
+            div(class="info info1")
+                h3 相会在前程似锦
+                p 我们每天促进数以亿计的商业和社交互动，包括用户和用户之间、消费者和商家之间以及企业和企业之间的互动。
+            div(class="info info2")
+                h3 工作在前程似锦
+                p 我们向客户提供商业基础设施和数据技术，让他们建立业务、创造价值，并与我们的其他生态系统参与者共享成果。
+            div(class="info info3")
+                h3 生活在前程似锦
+                p 我们致力拓展产品和服务范畴，让前程似锦成为我们客户日常生活的重要部份。
+        .image-show
+            .image-box
+                img(alt="p" src="src/resources/images/culture/img-1.png")
+            .image-box
+                img(alt="p" src="src/resources/images/culture/img-2.png")
+            .image-box
+                img(alt="p" src="src/resources/images/culture/img-3.png")
+            .image-box
+                img(alt="p" src="src/resources/images/culture/img-4.png")
+    .culture-outter
+        .culture-inner1
+            .part1
+                +unknowname("我们的理念", 
+                    {
+                        url:"src/resources/images/culture/img-5.png",
+                        h3:"我们的愿景",
+                        p:"一站式教育资源整合平台"
+                    },
+                    {
+                        url:"src/resources/images/culture/img-6.png",
+                        h3:"我们的使命",
+                        p:"通过互联网服务提升K12教育品质"
+                    },
+                    {
+                        url:"src/resources/images/culture/img-7.png",
+                        h3:"管理理念",
+                        p:"关心员工成长和发展"
+                    }
+                )
+                h1 我们的发展
+                p 前程似锦集团由动游天下创始人王文创立，于2018年在中国成都创立。我们的创始人创办本公司是致力于帮学员找课、帮机构招生，撮合学员与机构成交，创建公平、公正、透明的第三方撮合交易平台。
+            +company_resume()
+        .company_process 
+            div
+                .images
+                    img(alt="p" src="src/resources/images/culture/icon-1.png")
+                .div 
+                    h4 2017年1月
+                    p 前程似锦创始人立项考察调研
+            div
+            div
+                .div 
+                    h4 2017年 10月
+                    p 前程似锦创始团队组建
+                .images
+                    img(alt="p" src="src/resources/images/culture/icon-2.png")
+            div
+            div
+                .images
+                    img(alt="p" src="src/resources/images/culture/icon-3.png")
+                .div 
+                    h4 2018年 2月
+                    p 前程似锦产品研发启动
+
+
+
+
+
+
+
+
+

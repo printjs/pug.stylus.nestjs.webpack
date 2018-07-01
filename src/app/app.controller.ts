@@ -59,6 +59,35 @@ export class ApplicationController {
         };
     }
 
+    /**
+     * 企业文化
+     */
+    @Get("/culture")
+    @Render("culture")
+    public culture() {
+        return {
+            page: "culture",
+            pages: [
+                "src/resources/images/culture/banner.png",
+            ],
+        };
+    }
+
+
+    /**
+     * 加入我们
+     */
+    @Get("/join")
+    @Render("join")
+    public join() {
+        return {
+            page: "join",
+            pages: [
+                "src/resources/images/join/img-1.png",
+            ],
+        };
+    }
+
 
     /**
      * 关于我们

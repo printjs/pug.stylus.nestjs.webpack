@@ -1,30 +1,6 @@
 @import "var.styl"
+@import "mixins.styl"
 
-pas()
-    .pas
-        width $common-width
-        margin 80px auto 60px auto
-        >.context
-            display flex
-            >.part
-                width 48%
-                &:first-child
-                    margin-right 2%
-                >.img_intro
-                    height 300px
-                    border-radius 5px
-                    width 100%
-                    overflow hidden
-                    >img 
-                        height 100%
-                        width 100%
-                >.learnmore
-                    display inline-block
-                    padding 5px 10px
-                    cursor pointer
-                    border-radius 15px
-                    border 1px solid #b9c2c7
-                    color #b9c2c7
 pas()
 .phundred
     width 100%
@@ -40,7 +16,7 @@ pas()
             margin-bottom 50px
             border-radius 5px
             overflow hidden
-            box-shadow: 0px 5px 3px #888888;
+            box-shadow: 0px 5px 3px #888888
             width 19%
             height 450px
             flex-grow 1
@@ -60,31 +36,7 @@ pas()
         height 300px
         position relative
         background-color:rgba(19,174,255,0.4)
-        >.company_resume
-            width $common-width
-            display flex
-            margin 0px auto
-            justify-content space-around
-            color #ffffff
-            >.part
-                margin-top 40px
-                border-right 3px solid #ffffff
-                display flex
-                justify-content center
-                flex-direction column
-                width 18%
-                &:last-child
-                    border-right-width 0px
-                >p
-                    margin 5px 10px
-                    text-align center
-                >.m
-                    font-size 36px
-                    font-weight bold
-                    >span 
-                        font-size 13px
-                >.t
-                    font-size 14px
+        company_resume()
         >.logo_story
             position absolute
             width $common-width

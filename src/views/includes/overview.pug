@@ -32,8 +32,10 @@
                 a(href="/home") 首页
             .item 
                 a(href="/pas") 产品与服务
-            .item 企业文化
-            .item 加入我们
+            .item 
+                a(href="/culture") 企业文化
+            .item
+                a(href="/join") 加入我们
             .item 
                 a(href="/about") 关于我们
     .foreword
@@ -44,6 +46,14 @@
                 div(class="intro_title clearfix marginleft")
                     .word 产品与服务
                     .box_shadow Products & solutions
+            when "culture"
+                div(class="intro_title clearfix marginleft")
+                    .word 企业文化
+                    .box_shadow Corporate culture 
+            when "join"
+                div(class="intro_title clearfix marginleft")
+                    .word 加入我们
+                    .box_shadow Join US 
             when "about"
                 div(class="intro_title clearfix marginleft")
                     .word 关于我们

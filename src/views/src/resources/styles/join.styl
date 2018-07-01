@@ -1,0 +1,33 @@
+@import "var.styl"
+@import "mixins.styl"
+
+.join-bg
+    width 100%
+    height auto
+    background #f5f6f7 url("../images/home-bk-img.png") repeat
+    >.job-panel
+        margin 100px auto
+        width $common-width
+        >.job-list
+            display flex
+            flex-wrap wrap
+            >.job-outline
+                display flex
+                border-radius 10px
+                margin 10px 1% 10px 0px
+                background-color #ffffff
+                width 48%
+                justify-content space-between
+                >.left
+                    padding-left 20px
+                >.right
+                    padding-right 20px
+                    display flex
+                    justify-content center
+                    align-items center
+.white-bg
+    width 100%
+    >.common
+        margin 100px auto
+        width $common-width
+        unknowname()

@@ -2,25 +2,14 @@
 extends index.pug
 block link
     link(rel="stylesheet", href="dist/home.page.css")
-block content
+block content 
+    include includes/mixins.pug
     .pas
         .intro_title
             .word 产品与服务
             .box_shadow Products & solutions
             .more more
-        .context
-            .part
-                .img_intro
-                    img(alt="p1" src="src/resources/images/home-ps-img1.png")
-                p App
-                p.des 前程似锦创立于2017年，是以教育为导向的社交平台，通过大数据分析为家长提供既有参与感又个性化的选择教育体验。
-                .learnmore 了解更多
-            .part
-                .img_intro
-                    img(alt="p2" src="src/resources/images/home-ps-img2.png")
-                p App
-                p.des 功能齐全、贴合培训学校运营管理实际的系统软件，能方便快捷解决学校招生、教务、缴费、财务、人事等环节的管理问题。
-                .learnmore 了解更多
+        +pas()
     .phundred
         .pmessage
             .intro_title
@@ -49,27 +38,7 @@ block content
                 p 在线教育
                 .context 由于优秀学习资源的稀缺性和区 域性限制等因素造成的学习环境 差异化其实非常巨大，对教育资 源公平性的争夺日益激烈。 解决这个问题的途径就是通过互 联网的手段快速对接教与学，并 突破很多条件的限制（比如时差， 比如区域……）就成为内容教育 的创新与突破点，作为平台，对 他们进行流量分发一样有效。
         .company_hundred
-            div(class="pmessage company_resume")
-                .part 
-                    p.m 2018
-                        span 年
-                    p.t 公司成立时间
-                .part
-                    p.m 1082
-                        span 万
-                    p.t 年营业额
-                .part
-                    p.m 3
-                        span +
-                    p.t 覆盖城市
-                .part
-                    p.m 10
-                        span +
-                    p.t 投资项目
-                .part
-                    p.m 40
-                        span +
-                    p.t 项目研究成果
+            +company_resume()
             .logo_story
                 .logo
                     img(alt="logo" src="src/resources/images/home-aus-logo.png")

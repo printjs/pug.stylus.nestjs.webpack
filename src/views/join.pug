@@ -1,2 +1,56 @@
 //- exnteds index.pug
 extends index.pug
+block link
+    link(rel="stylesheet", href="dist/join.page.css")
+block content
+    include includes/mixins.pug
+    .join-bg
+        .job-panel
+            .intro_title
+                .word 招聘职位
+                .box_shadow About US
+                .more more
+            .job-list
+                .job-outline
+                    .left
+                        h3 互动体验设计师
+                        p 工作地点：成都市 / 招聘人数：1人
+                    .right 
+                        span 了解详情
+                .job-outline
+                    .left
+                        h3 互动体验设计师
+                        p 工作地点：成都市 / 招聘人数：1人
+                    .right 
+                        span 了解详情                
+                .job-outline
+                    .left
+                        h3 互动体验设计师
+                        p 工作地点：成都市 / 招聘人数：1人
+                    .right 
+                        span 了解详情
+                .job-outline
+                    .left
+                        h3 互动体验设计师
+                        p 工作地点：成都市 / 招聘人数：1人
+                    .right 
+                        span 了解详情
+    .white-bg
+        .common
+            +unknowname("员工活动", 
+                {
+                    url:"src/resources/images/culture/img-5.png",
+                    h3:"圣诞晚会",
+                    p:"自公司创立伊始，每年的圣诞前夜，公司全体员工都会齐聚一堂， 自导自演，载歌载舞，共同欢庆。"
+                },
+                {
+                    url:"src/resources/images/culture/img-6.png",
+                    h3:"嘉年华",
+                    p:"每年一次周年庆大型娱乐活动，覆盖公司全体员工及其 家属，是公司最大规模的员工及家属同庆的活动。"
+                },
+                {
+                    url:"src/resources/images/culture/img-7.png",
+                    h3:"文体协会",
+                    p:"为了关爱员工健康，丰富业余文化生活，成立了舞蹈、音乐、 篮球、足球、羽毛球、桌游等各种协会。"
+                }
+            )

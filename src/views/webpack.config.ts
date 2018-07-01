@@ -12,6 +12,8 @@ const config: webpack.Configuration = {
         "index.page": join(__dirname, "src/index.ts"),
         "home.page": join(__dirname, "src/home.ts"),
         "pas.page": join(__dirname, "src/pas.ts"),
+        "culture.page": join(__dirname, "src/culture.ts"),
+        "join.page": join(__dirname, "src/join.ts"),
         "about.page": join(__dirname, "src/about.ts"),
     },
     output: {
