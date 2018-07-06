@@ -90,6 +90,29 @@ export class ApplicationController {
 
 
     /**
+     * 职位列表 
+     */
+    @Get("/joblist")
+    @Render("joblist")
+    public job_list() {
+        return {
+        };
+    }
+
+    
+    /**
+     * 职位详情
+     */
+    @Get("/jobdetail")
+    @Render("jobdetail")
+    public job_detail() {
+        return {
+        };
+    }
+
+
+
+    /**
      * 关于我们
      */
     @Get("/about")

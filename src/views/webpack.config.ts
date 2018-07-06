@@ -15,6 +15,8 @@ const config: webpack.Configuration = {
         "culture.page": join(__dirname, "src/culture.ts"),
         "join.page": join(__dirname, "src/join.ts"),
         "about.page": join(__dirname, "src/about.ts"),
+        "job.list": join(__dirname, "src/job.list.ts"),
+        "job.detail": join(__dirname, "src/job.detail.ts"),
     },
     output: {
         path: join(__dirname, "dist"),

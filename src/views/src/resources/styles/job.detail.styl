@@ -1,0 +1,47 @@
+@import "mixins.styl"
+@import "var.styl"
+
+
+nav()
+.job-list-bg
+    padding 100px 0px
+    background #f5f6f7 url("../images/home-bk-img.png") repeat 
+    .resume
+        padding 50px 10px
+        width $common-width
+        margin 0px auto   
+        background-color #ffffff    
+        h1
+            text-align center 
+        .row
+            display flex
+            flex-wrap wrap
+            justify-content space-around
+            >div
+                width 19%
+                padding 15px
+                text-align left
+                border-right 2px solid #f5f6f7
+                &:last-child
+                    border-right-width 0px
+                >.label
+                    font-weight bold
+                    margin-right 10px
+            margin 10px 0px
+        >.desc,.require
+            width 90%
+            margin 10px auto
+            border-bottom 2px solid #f5f6f7
+            >ul
+                margin 0px
+                padding 20px
+                list-style-type decimal
+        >.btn
+            cursor pointer
+            width 100px
+            text-align center
+            padding 10px 20px
+            margin 50px auto
+            border-radius 20px
+            color #ffffff
+            background linear-gradient(to right, red , blue)

@@ -1,0 +1,56 @@
+//- extends secondary.pug
+extends secondary.pug
+block link
+    link(rel="stylesheet", href="dist/job.detail.css")
+block content
+    include includes/mixins.pug
+    +nav()
+    .job-list-bg
+        .resume
+            h1 互动体验设计师
+            .row
+                div
+                    span.label 工作地点
+                    span.value 北京市
+                div
+                    span.label 招聘人数
+                    span.value 1人
+                div
+                    span.label 职位类别
+                    span.value 产品类
+                div
+                    span.label 工作年限
+                    span.value 5年以上
+            .row
+                div
+                    span.label 工作地点
+                    span.value 北京市
+                div
+                    span.label 所属部门
+                    span.value 平台设计部
+                div
+                    span.label 薪酬范围
+                    span.value 面议
+                div
+                    span.label 发布要求
+                    span.value 2018-03-30
+            .desc
+                h3 岗位描述
+                ul
+                    li 负责零售店铺及线上线下互动体验设计
+                    li 面向各类零售店铺内的各环节体验升级，进店，逛店，结算通道，商品互动，CC互动，SC互动等体验设计
+                    li 能够通过研究不同零售店的业态，思考店铺体验改造的设计方案，将复杂的技术转化成可用性的产品体验，具备较好的设计转化思维和推动能力。
+                    li 独立承担整体项目能力，具体整合设计能力，不断的通过实践和落地案例总结互动体验设计的方法，形成标准和原则指导设计。
+                    li 对于各类线上+线下互动产品的具有跨端体验的延伸设计思维。
+                    li 良好的合作沟通能力，协同建筑设计，空间设计，品牌设计，用研等不同角色一起构建零售场景的互动体验。
+            .require
+                h3 岗位要求
+                ul
+                    li 拥有3-5年的用户体验设计师，交互设计师或类似UX相关角色的工作经验，有管理经验更佳。
+                    li 当前所在的领域能有自己的设计思考和观点（通过作品案例说明），设计眼界宽广，能有跨端的互动体验设计经验，如家庭场景，商超场景等。
+                    li 对于新技术、新事物有好奇心和学习认知能力，关注业内各类新的智能产品，物联网产。.
+                    li 手机移动端、PAD端，电视，互动屏之间的互动设计能力，对硬件和使用场景有所深入了解，具备跨屏设计和视觉设计能力优先。
+                    li 人机工程，工业设计，计算机，视觉传达，服务设计等相关专业，英语精通更佳。
+                    li 熟练运用各种设计3D设计、动效设计，移动设计工具，如Sketch，Illustrator，Photoshop，Axure，Invision，Flinto。
+            .btn
+                a(href="mailto:aaa@5icool.org") 投递简历

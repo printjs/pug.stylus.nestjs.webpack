@@ -1,0 +1,47 @@
+//- extends secondary.pug
+extends secondary.pug
+block link
+    link(rel="stylesheet", href="dist/job.list.css")
+block content
+    include includes/mixins.pug
+    +nav()
+    .job-list-bg
+        .job-panel
+            .intro_title
+                .word 招聘职位
+                .box_shadow About US
+                .more more
+            .job-list
+                .job-outline
+                    .left
+                        h3 互动体验设计师
+                        p 工作地点：成都市 / 招聘人数：1人
+                    .right 
+                        span 了解详情
+                .job-outline
+                    .left
+                        h3 互动体验设计师
+                        p 工作地点：成都市 / 招聘人数：1人
+                    .right 
+                        span 了解详情                
+                .job-outline
+                    .left
+                        h3 互动体验设计师
+                        p 工作地点：成都市 / 招聘人数：1人
+                    .right 
+                        span 了解详情
+                .job-outline
+                    .left
+                        h3 互动体验设计师
+                        p 工作地点：成都市 / 招聘人数：1人
+                    .right 
+                        span 了解详情
+        .pag
+            .pre 上一页
+            .page 1
+            .page 2
+            .page 3
+            .page 4
+            .page 5
+            .next 下一页
+    

@@ -46,3 +46,21 @@ mixin company_resume()
             p.m 40
                 span +
             p.t 项目研究成果
+mixin nav()
+    .navigation_black
+        .logo
+            img(
+                alt="logo"
+                src="src/resources/images/home-img-logo.png"
+            )
+        .index
+            .item 
+                a(href="/home") 首页
+            .item 
+                a(href="/pas") 产品与服务
+            .item 
+                a(href="/culture") 企业文化
+            .item
+                a(href="/join") 加入我们
+            .item 
+                a(href="/about") 关于我们
