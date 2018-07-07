@@ -59,6 +59,17 @@ export class ApplicationController {
         };
     }
 
+    @Get("/pasdetail")
+    @Render("pasdetail")
+    public pasdetail() {
+        return {
+            // page: "pas",
+            // pages: [
+            //     "src/resources/images/home-img-page2.png",
+            // ],
+        };
+    }
+
     /**
      * 企业文化
      */

@@ -1,20 +1,27 @@
 import Swiper from "swiper";
 require("swiper/dist/css/swiper.min.css");
 import $ from "jquery";
-
+// require("./resources/styles/overview.styl");
 
 export class Overview {
     private mySwiper!: any;
+    private text!: any;
+    private delay: number = 2500;
+    private tranform: number = 1000;
 
     constructor() {
         this.mySwiper = new Swiper(".swiper-container", {
             // Optional parameters
             // direction: "vertical",
-            loop: document.location.pathname === "pas" ? false : true,
-            spaceBetween: 30,
+            loop: document.location.pathname === "home" ? true : false,
+            spaceBetween: 0,
             centeredSlides: true,
-            autoplay: document.location.pathname === "pas" ? {} : {
-                delay: 2500,
+            // autoplay: document.location.pathname === "pas" ? {} : {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            autoplay: {
+                delay: this.delay,
                 disableOnInteraction: false,
             },
 
@@ -46,10 +53,21 @@ export class Overview {
                 }
             }
         });
+
+        this.text = new Swiper(".swiper-container-text", {
+            direction: "vertical",
+            autoplay: {
+                delay: this.delay,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 30,
+            loop: document.location.pathname === "home" ? true : false,
+        });
     }
 
     public swithPage(page: string) {
-        this.mySwiper.slideTo(page, 0);
+        this.mySwiper.slideTo(page, this.tranform);
+        this.text.slideTo(page, this.tranform);
     }
 }
 

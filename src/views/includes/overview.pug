@@ -41,7 +41,12 @@
     .foreword
         case page
             when "home"
-                .title 12312313123
+                .swiper-container-text
+                    .swiper-wrapper
+                        each item,index in pages
+                            .swiper-slide
+                                img(src=`src/resources/images/home-icon-page${index+1}.png`, alt="")
+                                p(class=`ptitle ptitle-${index}`) #{item.h2}
             when "pas"
                 div(class="intro_title clearfix marginleft")
                     .word 产品与服务
