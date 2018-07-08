@@ -6,73 +6,93 @@ pas()
     width 100%
     height auto
     background #f5f6f7 url("../images/home-bk-img.png") repeat
+    padding 90px 0px 0px 0px
     >.pmessage
         width $common-width
         margin 0px auto
     >.pshow
         display flex
+        margin-bottom 102px
         >.part
             background #ffffff
-            margin-bottom 50px
-            border-radius 5px
+            border-radius 12px
             overflow hidden
-            box-shadow: 0px 5px 3px #888888
-            width 19%
-            height 450px
-            flex-grow 1
-            margin-right 15px
-            &:last-child 
-                margin-right 0px
+            box-shadow()
+            width 282px
+            height auto
+            flex-grow 0
+            margin-right 25px
+            // &:last-child 
+            //     margin-right 0px
             >.figure
-                height 30%
+                display inline-block
+                // height 30%
                 >img 
+                    vertical-align middle
                     width 100%
-                    height 100%
+            >p
+                font-size 18px
+                font-weight bold
+                margin 30px 0px 0px 0px
+                padding-left 18px
             >.context
-                padding 5px 10px
+                font-size 12px
+                padding 24px 18px
+                line-height 24px
+                color #7f9099
     >.company_hundred
         width 100%
-        margin-top 40px
-        height 300px
+        height 360px
         position relative
-        background-color:rgba(19,174,255,0.4)
+        background rgb(19,174,255) url("../images/bk.png") repeat
         company_resume()
         >.logo_story
             position absolute
             width $common-width
             left 50%
             margin-left $offset-left
-            top 200px
-            border-radius 20px
+            top 260px
+            border-radius 48px
             display flex
             z-index 1
             background-color #ffffff
             box-shadow 0px 5px 3px #888888
             >.logo
-                height 250px
-                width 250px
-                min-width 250px
+                height 420px
+                width 420px
                 border 1px solid gray 
-                border-radius 5px
-                margin 50px
+                border-radius 24px
+                margin 30px
+                flex-shrink 0
                 >img
                     height 100%
                     width 100%
             >.story
                 margin 50px 50px 50px 0px
+                >.intro_title
+                    margin-left 60px
+                    >.more
+                        margin-right 71px
+                >.context
+                    text-indent 40px
+                    context(30px)
+                    // font-size 18px 
+                    // color #7f9099
+                    // line-height 30px
+                    margin-left 60px
 .our_customer
     width $common-width
-    margin 300px auto 100px auto
+    margin 540px auto 100px auto
     >.customer
         width 100%
         display flex
         flex-wrap wrap
         >.part
             width 18%
-            height 150px
-            margin 20px 20px 0px 0px
-            box-shadow: 0px 5px 3px #888888
-            border-radius 5px
+            height auto
+            margin 20px 20px 88px 0px
+            box-shadow()
+            border-radius 24px
             overflow hidden
             >.figure
                 height 120px
@@ -81,6 +101,7 @@ pas()
                 justify-content center
             >.name
                 display flex
-                line-height 30px
+                line-height 60px
+                height 60px
                 justify-content center
 

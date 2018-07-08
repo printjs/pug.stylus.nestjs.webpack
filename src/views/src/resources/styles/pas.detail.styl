@@ -5,23 +5,55 @@
 nav()
 
 .pas_panel
-    background #082232 url("../images/home-bk-img.png") repeat 
-    height 300px
+    background #002233 url("../images/bk.png") repeat 
+    height 480px
     width 100%
     color #ffffff
+    padding-top 96px
+    >.breadcrumb
+        width $common-width
+        margin 0px auto
+    >.child_panel
+        margin 24px auto 102px auto
+        width $common-width
+        display flex  
+        >.left
+            position relative 
+            margin-right 60px 
+            >h2
+                font-size 48px
+            >.yin
+                position absolute
+                font-size 60px
+                color rgba(255,255,255,0.1)
+                left 0px
+                top 64px
+            >p
+                margin-top 76px
+                font-size 24px
 .ci,.course,.est,.ht
     width $common-width
-    margin 50px auto
+    margin 180px auto
 .ht
     display flex
+    // margin 180px auto 0px atuo !important
     >.left
         width 50%
+        flex-shrink 0
         img 
             height 100%
             width 100%
     >.right
         padding 100px 0px 0px 50px
+        h2 
+            font-size 36px
+            // margin-bottom 54px
+        >.intro
+            color #7f9099
+            font-size 24px
+            margin-bottom 54px
         >p
+            margin 0px 0px 46px 0px
             display flex
             align-items center
             >img
@@ -31,9 +63,16 @@ nav()
     >.left
         width 50%
         padding 100px 0px 0px 50px
+        flex-shrink 0
         >h2
+            font-size 36px
             text-align right
+        >.intro
+            color #7f9099
+            font-size 24px
+            margin-bottom 54px            
         >p
+            margin 0px 0px 46px 0px
             display flex
             align-items center
             justify-content flex-end
@@ -46,45 +85,48 @@ nav()
 .est
     display flex
     >.left
-        position relative
-        width 70%
+        // position relative
+        width 720px
+        display inline-block
         >img 
-            height 100%
+            vertical-align middle
             width 100%
-        >p
-            width 100px
-            display flex
-            align-items center
-            position absolute
-            bottom 150px    
-        >.est-p1
-            left 50px
-        >.est-p2
-            left 200px
-        >.est-p3
-            left 350px
+        flex-shrink 0
     >.right
-        padding 200px 0px 0px 50px
+        padding 90px 0px 0px 50px
+        p
+            font-size 24px
+            color #7f9099
+        h2
+            font-size 36px
 .ci
     display flex
     >.left
-        width 30%
-        padding 200px 0px 0px 50px
+        // width 30%
+        padding 90px 0px 0px 50px
+        p
+            font-size 24px
+            color #7f9099
+        h2
+            font-size 36px
     >.right
-        position relative
+        width 720px
+        // position relative
         margin-left 100px
+        display inline-block
+        flex-shrink 0
         >img 
-            height 100%
+            vertical-align middle
             width 100%
-        >p
-            width 100px
-            display flex
-            align-items center
-            position absolute
-            bottom 150px    
-        >.ci-p1
-            left 50px
-        >.ci-p2
-            left 200px
-        >.ci-p3
-            left 350px
+        // >p
+        //     width 100px
+        //     display flex
+        //     align-items center
+        //     position absolute
+        //     bottom 150px    
+        // >.ci-p1
+        //     left 50px
+        // >.ci-p2
+        //     left 200px
+        // >.ci-p3
+        //     left 350px

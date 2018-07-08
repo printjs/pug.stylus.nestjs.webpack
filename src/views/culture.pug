@@ -5,6 +5,9 @@ block link
 block content
     include includes/mixins.pug
     .culture
+        div(class="breadcrumb clearfix")
+            span 首页 - 
+            span 企业文化
         h1 前程似锦的使命是打造一站式教育资源整合平台
         p 我们旨在提高用户的选课效率、降低机构的招生成本。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们倡导按成交付费的计费模式，解决了培训机构的广告投放风险，颠覆了传统的广告计费模式，引领中国教育培训市场蓬勃发展,搭建教育培训机构和学员之间的匹配平台。
         .info-div
@@ -51,21 +54,23 @@ block content
             +company_resume()
         .company_process 
             div
-                .images
+                div(class=".images img1")
                     img(alt="p" src="src/resources/images/culture/icon-1.png")
                 .div 
                     h4 2017年1月
                     p 前程似锦创始人立项考察调研
             div
+                img(alt="p" src="src/resources/images/culture/line1.png")
             div
                 .div 
                     h4 2017年 10月
                     p 前程似锦创始团队组建
-                .images
+                div(class=".images img2")
                     img(alt="p" src="src/resources/images/culture/icon-2.png")
             div
+                img(alt="p" src="src/resources/images/culture/line2.png")
             div
-                .images
+                div(class=".images img3")
                     img(alt="p" src="src/resources/images/culture/icon-3.png")
                 .div 
                     h4 2018年 2月

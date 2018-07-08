@@ -4,16 +4,20 @@
 
 nav()
 .job-list-bg
-    padding 100px 0px
+    padding 90px 0px 120px 0px
     background #f5f6f7 url("../images/home-bk-img.png") repeat 
+    >.breadcrumb
+        margin 0px auto 66px auto
+        width $common-width
     .resume
-        padding 50px 10px
+        padding 50px 0px 54px 0px
         width $common-width
         margin 0px auto   
         background-color #ffffff    
         h1
             text-align center 
         .row
+            padding 0px 54px
             display flex
             flex-wrap wrap
             justify-content space-around
@@ -32,16 +36,28 @@ nav()
             width 90%
             margin 10px auto
             border-bottom 2px solid #f5f6f7
+            padding 54px 120px 48px 120px
+            >h3
+                font-size 18px
+                margin-bottom 42px
             >ul
                 margin 0px
-                padding 20px
+                padding 0px 0px 0px 12px
                 list-style-type decimal
+                >li
+                    font-size 12px
+                    color #7f9099
+                    margin 0px 0px 24px 0px
         >.btn
             cursor pointer
-            width 100px
+            width 240px
+            height 72px
+            line-height 72px
+            font-size 24px
             text-align center
-            padding 10px 20px
-            margin 50px auto
-            border-radius 20px
+            margin 50px auto 0px auto
+            border-radius 36px
             color #ffffff
-            background linear-gradient(to right, red , blue)
+            background linear-gradient(to right, rgb(19,174,255) , rgb(5,205,216))
+#footer
+    background-color #ffffff !important

@@ -1,11 +1,12 @@
 @import "var.styl"
-
+@import "mixins.styl"
 
 
 
 html,body
     margin 0
     padding 0
+    font-family "微软雅黑"
     a
         text-decoration none 
         &:link
@@ -33,7 +34,8 @@ html,body
                         text-align center
                         z-index 3
                         color #ffffff
-                        top 46%
+                        top 10%
+                        font-size 96px
                     >p
                         left 0px
                         right 0px
@@ -42,6 +44,7 @@ html,body
                         text-align center
                         z-index 3
                         color #ffffff 
+                        font-size 24px
                     >img 
                         width 100%
                         vertical-align middle
@@ -65,6 +68,7 @@ html,body
                     padding 5px 0px
                     width 120px
                     text-align center
+                    color rgba(255,255,255,0.7)
                     &:hover
                         background-color #ffffff
                         color #000000
@@ -72,25 +76,30 @@ html,body
                         cursor pointer
         >.foreword
             width $common-width
-            height 60px
+            height 144px
             position absolute
             left 50%
             margin-left $offset-left
             border-radius 80px
-            bottom -30px
+            bottom -72px
             z-index 1
             background-color #ffffff
-            box-shadow: 0px 5px 3px #888888;
+            box-shadow()
             display flex
             justify-content space-between
             align-items center
+            >.intro_title
+                height 60px
             >.swiper-container-text
                 height 60px
                 overflow hidden
-                margin-left 100px
+                margin-left 72px
                 .swiper-slide
                     display flex
+                    >img 
+                        margin-right 48px
                     >p
+                        font-size 26px
                         display flex
                         align-items center
             // >.ptitle
@@ -102,7 +111,7 @@ html,body
             >.pagination
                 display flex
                 cursor pointer
-                margin-right 100px
+                margin-right 72px
                 >.page
                     margin-left 15px
                     height 10px
@@ -114,25 +123,29 @@ html,body
     .intro_title
         position relative
         width 100%
-        height 60px
+        height 120px
         >.word
-            font-size 24px 
+            font-size 30px 
             position absolute
-            left 20px
+            left 0
             top 0px
         >.box_shadow
             position absolute
-            left 40px
-            top 24px
-            font-size 24px
+            left 0
+            top 11px
+            font-size 48px
             width auto
-            z-index -1
-            color rgb(242,244,245)
+            z-index 1
+            color rgba(0,34,51,0.1)
         >.more
+            width 180px
+            height 60px
+            font-size 18px
             margin-right 20px
             display inline-block
-            padding 10px 20px
-            border-radius 20px
+            text-align center
+            line-height 60px
+            border-radius 60px
             border 1px solid #2fb7ff
             color #2fb7ff
             cursor pointer
@@ -152,7 +165,9 @@ html,body
                 font-weight bold
     #footer
         width 100%
+        height 60px
         display flex
         justify-content center
         align-items center
         background-color $footer-color
+        color #002233
